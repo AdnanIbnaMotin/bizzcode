@@ -1,0 +1,498 @@
+html,body
+{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+}
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+.container {
+  font-family: sans-serif;
+  font-size: 18px;
+  background: url("back.jpg") no-repeat center;
+  background-size: cover;
+  background-attachment: fixed;
+  background: rgba(249, 249, 249);
+}
+
+
+
+
+
+.head {
+  background: rgba(249, 249, 249, 0.5);
+  position: relative;
+  width: 100%;
+}
+#logo {
+  padding: 1%;
+}
+.head ul, .head li {
+  list-style-type: none;
+  display: inline-block;
+}
+#search_input {
+  top: 0;
+  right: 50px;
+  position: absolute;
+  padding: 7px;
+}
+#search_input:hover {
+  border: none;
+}
+#search_input:focus {
+  border: none;
+}
+#search_icon {
+  height: 30px;
+  width: 30px;
+  box-shadow: 0 1px 3px black;
+  background: url("search-button-blue.png");
+  background-size: cover;
+  background-color: white;
+  top: 27px;
+  border-radius: 10%;
+  right: 14px;
+  position: absolute;
+}
+#search_icon:hover {
+  background-color: lightgray;
+}
+
+
+
+
+
+nav {
+  background: white;
+  position: relative;
+  z-index: 100;
+  width: 100%;
+  text-align: center;
+  box-shadow: 0 0 10px black;
+}
+nav ul {
+  padding: 1% 0;
+  list-style-type: none;
+  display: inline-block;
+}
+nav ul li {
+  display: inline-block;
+}
+nav ul li a {
+  font-weight: bold;
+  color: rgb(35, 76, 125);
+  text-decoration: none;
+  margin: 0 50px;
+  padding: 8px 15px 10px 15px;
+}
+nav ul li a:hover {
+  border-top: 5px solid rgb(35, 76, 125);
+  border-bottom: 5px solid rgb(35, 76, 125);
+}
+nav ul li #actv_p:link, nav ul li #actv_p:visited {
+  border-top: 5px solid rgb(35, 76, 125);
+  border-bottom: 5px solid rgb(35, 76, 125);
+}
+
+
+
+
+
+
+
+
+
+/* slider code design start */
+.mySlides {display:none}
+
+/* Slideshow container */
+.slideshow-container {
+  background: white;
+  width: 100%;
+  position: relative;
+  margin: auto;
+}
+
+/* Caption text */
+
+.text {
+  color: white;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  width: 20%;
+  margin: 1%;
+  top: 0;
+  right: 0;
+  text-align: center;
+  background: rgba(35, 76, 125, 0.5);
+  border: 2px solid white;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 13px;
+  width: 13px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+/* slider code design end */
+
+
+/* about section design start */
+.about_section {
+  margin: 2% 20%;
+  text-align: center;
+  box-shadow: 0 0 10px rgb(35, 76, 125) inset;
+}
+.about_section h2 {
+  color: rgb(35, 76, 125);
+}
+.about_section, .about_section h2, .about_section p{
+  padding: 1%;
+  line-height: 1.6;
+}
+/* about section design end */
+
+/* service section design start */
+.service_section {
+  text-align: center;
+  width: 100%;
+}
+.service_section h2 {
+  color: rgb(35, 76, 125);
+  padding: 1% 0;
+  margin-bottom: 2%;
+  box-shadow: 0 0 10px rgb(35, 76, 125);
+}
+#service_pro {
+  box-shadow: none;
+}
+.service1_img {
+  display: inline-block;
+  width: 45%;
+  padding: 1% 0;
+}
+.service1_descrip {
+  display: inline-block;
+  width: 45%;
+}
+.service1_descrip h2 {
+  line-height: 2;
+  color: rgb(35, 76, 125);
+}
+.service1_descrip p {
+  line-height: 2;
+  text-align: justify;
+}
+.img {
+  box-shadow: 0 0 30px black;
+}
+/* service section design end */
+
+/* project section design start */
+.project_section {
+  border-top: 2px solid rgb(35, 76, 125);
+  background: rgb(241, 239, 239);
+  margin: 2% 0 0 0;
+  padding-top: 2%;
+  text-align: center;
+  line-height: 2;
+}
+#pro_btn {
+  box-shadow: 0 0 5px black;
+  background: rgb(35, 76, 125);
+  padding: 1% 2%;
+  margin: 1% 0;
+  color: white;
+  border-radius: 2%;
+  transition: all 1s;
+}
+#pro_btn:hover {
+  background: white;
+  color: rgb(35, 76, 125);
+}
+@keyframes glow {
+  0% { box-shadow: 0 0 10px  yellow; }
+  50% { box-shadow: 0 0 10px red; }
+  100% { box-shadow: 0 0 10px yellow; }
+}
+/* project section design end */
+
+/* footer section design start */
+.footer_section {
+  text-align: center;
+  background: lightgray;
+  padding: 2%;
+}
+.footer_section h4 {
+  line-height: 2;
+}
+.f_section1 {
+  width: 30%;
+  float: left;
+}
+.f_section2 {
+  display: inline-block;
+  width: 23%;
+}
+.f_section2 img {
+  width: 55%;
+  border-radius: 50%;
+  transition: all 0.5s;
+}
+.f_section2 img:hover {
+  box-shadow: 0 0 10px rgb(35, 76, 125);
+}
+.f_section3 {
+  width: 30%;
+  float: right;
+}
+.f_section1 ul, .f_section2 ul, .f_section3 ul {
+  list-style-type: none;
+}
+.f_section2 ul li {
+  float: left;
+}
+.f_section2 ul li a, .f_section3 ul li a {
+  color: black;
+  text-decoration: none;
+}
+address {
+  margin-top: 2%;
+  padding-top: 2%;
+  width: 100%;
+  display: inline-block;
+  border-top: 1px solid rgb(35, 76, 125);
+}
+address a {
+  color: rgb(35, 76, 125);
+  text-decoration: none;
+}
+/* footer section design end */
+
+
+/* home page design end */
+
+
+
+
+
+/* about page design start */
+
+/* history of bizzcode design start */
+.history_section {
+  background: rgba(241, 239, 239, 0.7);
+  color: black;
+  border-bottom: 1px solid rgb(35, 76, 125);
+}
+.history_section p, .history_section h2 {
+  text-align: justify;
+  margin: 0 20%;
+  line-height: 1.5;
+  padding-bottom: 2%;
+}
+.history_section h2 {
+  text-align: center;
+  padding-top: 3%;
+  color: rgb(35, 76, 125);
+}
+/* history of bizzcode design end */
+
+/* crews_section design start */
+.member_section {
+  text-align: center;
+  width: 100%;
+}
+.member_section h2, .member_section h3 {
+  color: rgb(35, 76, 125);
+  padding: 1% 0;
+  margin-top: 2%;
+}
+.member_section p {
+  line-height: 1.5;
+}
+.ceo_section {
+  display: inline-block;
+  width: 45%;
+  margin: 2% 0;
+  float: left;
+}
+.ceo_descrip {
+  display: inline-block;
+  width: 40%;
+  margin: 2% 0;
+}
+.ceo_descrip p {
+  line-height: 2;
+  text-align: justify;
+}
+.ceo_img {
+  box-shadow: 0 0 20px black;
+  border-radius: 10%;
+  width: 35%;
+}
+
+
+.clear {
+  clear: both;
+}
+
+.crew_member_section {
+  width: 100%;
+  text-align: center;
+}
+.crews {
+  width: 25%;
+  display: inline-block;
+  margin: 0;
+  float: left;
+  margin: 2% 0;
+}
+.crews img {
+  width: 80%;
+  border-radius: 50%;
+  box-shadow: 0 0 20px black;
+}
+.crews h3 {
+  color: rgb(35, 76, 125);
+  box-shadow: 0 0 10px black;
+  width: 50%;
+  display: inline-block;
+}
+.crews h3 {
+  padding: 2% 0;
+}
+.crews h3, .crews p {
+  margin: 3% 0;
+}
+/* crews_section design end */
+/* about page design end */
+
+
+
+
+/* contact page design start */
+.form_section h3 {
+  padding: 2% 0;
+  color: rgb(35, 76, 125);
+}
+.form_section p {
+  padding-bottom: 4%;
+}
+.form_section {
+  background: rgba(241, 239, 239, 0.7);
+  color: black;
+  text-align: center;
+  margin: 2% auto;
+  width: 40%;
+  padding: 2% 0;
+  border: 2px solid rgb(35, 76, 125);
+}
+
+input, textarea {
+  padding: 2%;
+  margin: 2% 0;
+  border-bottom: 2px solid rgb(35, 76, 125);
+}
+input:hover , textarea:hover {
+  animation: glow 2s infinite;
+}
+
+
+#submit_btn {
+  padding: 2% 4%;
+  border: 3px solid rgb(35, 76, 125);
+  animation: btn_glow 4s infinite;
+  background-color: rgb(35, 76, 125);
+  color: white;
+  box-shadow: 0 0 5px black;
+  transition: all 1s;
+}
+#submit_btn:hover {
+  animation: 0;
+  background: white;
+  color: rgb(35, 76, 125);
+  border: 2px solid rgb(35, 76, 125);
+
+}
+input:focus, textarea:focus {
+  border-bottom: 2px solid white;
+  animation: 0;
+}
+@keyframes btn_glow {
+  0% {
+    border: 2px solid rgb(35, 76, 125);
+  }
+  50% {
+    border: 2px solid white;
+  }
+  100% {
+    border: 2px solid rgb(35, 76, 125);
+  }
+}
+@keyframes glow {
+  0% {
+    border-bottom: 2px solid rgb(35, 76, 125);
+  }
+  50% {
+    border-bottom: 2px solid white;
+  }
+  100% {
+    border-bottom: 2px solid rgb(35, 76, 125);
+  }
+}
+
+.google_map {
+  position: relative;
+  box-shadow: 0 0 5px black;
+  float: left;
+  width: 100%;
+  margin-bottom: 3%;
+}
+.office_location {
+  animation: btn_glow 4s infinite;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 17%;
+  background: rgba(255, 255, 255, 0.6);
+  padding:2%;
+}
+/* contact page design end */
