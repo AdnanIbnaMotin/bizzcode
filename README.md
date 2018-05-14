@@ -1,2 +1,2 @@
 ## bizzcode
-https://adnanibnamotin.github.io/bizzcode/
+https://adnanibnamotin.github.io/Bizzcode/
